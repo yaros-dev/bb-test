@@ -7,33 +7,53 @@
     <title>Test BB</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__inner">
-            <a class="logo" href="#">Компания</a>
-            <nav class="menu">
+  <body id="block1">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">Компания</a>
+
+          <nav class="menu-first">
+            <ul class="menu-first__list">
+              <li class="menu-first__list-item">
+                <a class="menu-first__list-link" href="#block1">Блок 1</a>
+              </li>
+              <li class="menu-first__list-item">
+                <a class="menu-first__list-link" href="#block2">Блок 2</a>
+              </li>
+              <li class="menu-first__list-item">
+                <a class="menu-first__list-link" href="#block3">Блок 3</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="navigation">
+            <a href="#menu" class="burger-btn">☰</a>
+
+            <div id="menu" class="menu">
+              <a href="#" class="menu__close">✖</a>
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Блок 1</a>
+                  <a class="menu__list-link" href="#block1">Блок 1</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Блок 2</a>
+                  <a class="menu__list-link" href="#block2">Блок 2</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Блок 3</a>
+                  <a class="menu__list-link" href="#block3">Блок 3</a>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <header class="header">
       <div class="container">
         <div class="header__content-inner">
           <h4 class="header__flexibility">Максимальная гибкость</h4>
           <h1 class="header__title">Новый стиль</h1>
-          <a class="header__btn button-link" href="#">Переход по ссылке</a>
+          <a class="header__btn button-link" href="#" target="_blank">Переход по ссылке</a>
           <h4 class="header__subtitle">
             Никогда еще создание страницы не было таким простым
           </h4>
@@ -42,7 +62,7 @@
     </header>
 
     <main class="main container">
-      <section class="columns">
+      <section class="columns" id="block2">
         <div class="item item--left">
           <h5 class="cols__title">Левая колонка</h5>
           <p class="cols__sub">
@@ -55,7 +75,7 @@
             pariatur ipsa? Nobis cupiditate quae sed, a laudantium eveniet
             facere hic quos frtyacilis molestias vel id quam veniam deserunt
           </p>
-          <a class="button-link" href="#">Переход по ссылке</a>
+          <a class="button-link" href="#" target="_blank">Переход по ссылке</a>
         </div>
         <div class="item">
           <h5 class="cols__title">Правая колонка</h5>
@@ -66,7 +86,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="block3">
       <div class="container">
         <div class="items">
           <div class="item">
