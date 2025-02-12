@@ -147,7 +147,9 @@
   color: white;
   padding: 26px;
   background-color: #000; 
-  transition: all 0.3s; 
+  transition: all 0.3s;
+  height: 100vh;
+  overflow: auto; 
 
   &__list {
     display: flex;
