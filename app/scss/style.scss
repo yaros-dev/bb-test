@@ -146,15 +146,8 @@
 .menu {
   color: white;
   padding: 26px;
-  background-color: #000;
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translate(100%);
+  background-color: #000; 
+  transition: all 0.3s; 
 
   &__list {
     display: flex;
@@ -184,11 +177,6 @@
     padding-right: 11px;
     padding-bottom: 20px;
   }
-
-  &:target {
-    opacity: 1;
-    transform: translate(100%);
-  }
 }
 
 .burger-btn {
@@ -201,6 +189,23 @@
     text-decoration: none;
     border-radius: 5px;
   }
+}
+
+.page__menu {
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: translate(100%);
+}
+
+.page__menu:target {
+	display: block;
+	opacity: 1;
+	transform: translate(0);
 }
 
 .logo {
