@@ -10,6 +10,10 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 1.23;
+
+  &:has(.page__menu:target) {
+		overflow: hidden;
+	}
 }
 
 .button-link {
